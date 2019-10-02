@@ -13,6 +13,15 @@ https://github.com/shiftsst/core/issues/14 -->
 		/>
 	</type>
 <!-- 2019-10-03
+"Transfer the `Magento\CatalogImportExport\Model\Import\Uploader::init()` method modification to a plugin":
+https://github.com/shiftsst/core/issues/16 -->
+	<type name='Magento\CatalogImportExport\Model\Import\Uploader'>
+		<plugin
+			name='ShiftSST\Core\Plugin\CatalogImportExport\Model\Import\Uploader'
+			type='ShiftSST\Core\Plugin\CatalogImportExport\Model\Import\Uploader'
+		/>
+	</type>
+<!-- 2019-10-03
 "Transfer the `Magento\Framework\File\Uploader::checkMimeType()` method modification to a plugin":
 https://github.com/shiftsst/core/issues/12 -->
 	<type name='Magento\Framework\File\Uploader'>

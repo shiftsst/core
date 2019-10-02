@@ -3,6 +3,9 @@
 	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:ObjectManager/etc/config.xsd'
 >
+<!-- 2019-10-03
+"Transfer the `Magento\Catalog\Controller\Adminhtml\Product\Gallery\Upload::execute()` method modification to a plugin":
+https://github.com/shiftsst/core/issues/14 -->
 	<type name='Magento\Catalog\Controller\Adminhtml\Product\Gallery\Upload'>
 		<plugin
 			name='ShiftSST\Core\Plugin\Catalog\Controller\Adminhtml\Product\Gallery\Upload'
@@ -31,4 +34,17 @@ method modification to a plugin": https://github.com/shiftsst/core/issues/13 -->
 	<type name='Magento\Paypal\Model\Config'>
 		<plugin name='ShiftSST\Core\Plugin\Paypal\Model\Config' type='ShiftSST\Core\Plugin\Paypal\Model\Config'/>
 	</type>
+<!-- 2019-10-03
+"Transfer the `vendor/magento/module-catalog/etc/di.xml` file modification to a plugin":
+https://github.com/shiftsst/core/issues/15 -->
+	<virtualType name='Magento\Catalog\CategoryImageUpload'>
+		<arguments>
+			<argument name='allowedExtensions' xsi:type='array'>
+				<item name='pdf' xsi:type='string'>pdf</item>
+			</argument>
+			<argument name='allowedMimeTypes' xsi:type='array'>
+				<item name='pdf' xsi:type='string'>pdf</item>
+			</argument>
+		</arguments>
+	</virtualType>
 </config>

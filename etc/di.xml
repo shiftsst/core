@@ -12,6 +12,15 @@ https://github.com/shiftsst/core/issues/12 -->
 			type='ShiftSST\Core\Plugin\Framework\File\Uploader'
 		/>
 	</type>
+<!-- 2019-10-03
+"Transfer the `Magento\Framework\Image\Adapter\AbstractAdapter::getSupportedFormats()`
+method modification to a plugin": https://github.com/shiftsst/core/issues/13 -->
+	<type name='Magento\Framework\Image\Adapter\AbstractAdapter'>
+		<plugin
+			name='ShiftSST\Core\Plugin\Framework\Image\Adapter\AbstractAdapter'
+			type='ShiftSST\Core\Plugin\Framework\Image\Adapter\AbstractAdapter'
+		/>
+	</type>
 <!-- 2019-10-02 "How to remove the «PayPal CREDIT» button in Magento ≥ 2.3.1?" https://mage2.pro/t/6030 -->
 	<type name='Magento\Paypal\Model\Config'>
 		<plugin name='ShiftSST\Core\Plugin\Paypal\Model\Config' type='ShiftSST\Core\Plugin\Paypal\Model\Config'/>

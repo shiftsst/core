@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:ObjectManager/etc/config.xsd'
+>
+<!-- 2019-10-02 "How to remove the «PayPal CREDIT» button in Magento ≥ 2.3.1?" https://mage2.pro/t/6030 -->
+	<type name='Magento\Paypal\Model\Config'>
+		<plugin name='ShiftSST\Core\Plugin\Paypal\Model\Config' type='ShiftSST\Core\Plugin\Paypal\Model\Config'/>
+	</type>
+</config>

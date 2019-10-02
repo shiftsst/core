@@ -24,7 +24,7 @@ class Upload extends Sb {
 			// 2019-10-03 I have added the `pdf` item to replicate a custom modification in Magento 2.2.8.
 			$uploader->setAllowedExtensions(['jpg', 'jpeg', 'gif', 'png', 'pdf']);
 			// 2019-10-03
-			// I have commented out the a lines below to replicate a custom modification in Magento 2.2.8.
+			// I have commented out the 2 lines below to replicate a custom modification in Magento 2.2.8.
 			/** @var \Magento\Framework\Image\Adapter\AdapterInterface $imageAdapter */
 			//$imageAdapter = $sb->_objectManager->get(\Magento\Framework\Image\AdapterFactory::class)->create();
 			//$uploader->addValidateCallback('catalog_product_image', $imageAdapter, 'validateUploadFile');

@@ -3,6 +3,12 @@
 	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:ObjectManager/etc/config.xsd'
 >
+	<type name='Magento\Catalog\Controller\Adminhtml\Product\Gallery\Upload'>
+		<plugin
+			name='ShiftSST\Core\Plugin\Catalog\Controller\Adminhtml\Product\Gallery\Upload'
+			type='ShiftSST\Core\Plugin\Catalog\Controller\Adminhtml\Product\Gallery\Upload'
+		/>
+	</type>
 <!-- 2019-10-03
 "Transfer the `Magento\Framework\File\Uploader::checkMimeType()` method modification to a plugin":
 https://github.com/shiftsst/core/issues/12 -->

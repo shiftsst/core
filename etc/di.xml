@@ -3,6 +3,15 @@
 	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:ObjectManager/etc/config.xsd'
 >
+<!-- 2019-10-03
+"Transfer the `Magento\Framework\File\Uploader::checkMimeType()` method modification to a plugin":
+https://github.com/shiftsst/core/issues/12 -->
+	<type name='Magento\Framework\File\Uploader'>
+		<plugin
+			name='ShiftSST\Core\Plugin\Framework\File\Uploader'
+			type='ShiftSST\Core\Plugin\Framework\File\Uploader'
+		/>
+	</type>
 <!-- 2019-10-02 "How to remove the «PayPal CREDIT» button in Magento ≥ 2.3.1?" https://mage2.pro/t/6030 -->
 	<type name='Magento\Paypal\Model\Config'>
 		<plugin name='ShiftSST\Core\Plugin\Paypal\Model\Config' type='ShiftSST\Core\Plugin\Paypal\Model\Config'/>

@@ -13,6 +13,19 @@ https://github.com/shiftsst/core/issues/14 -->
 		/>
 	</type>
 <!-- 2019-10-03
+"Transfer the `vendor/magento/module-cms/etc/di.xml` file modification to a plugin":
+https://github.com/shiftsst/core/issues/17 -->
+	<type name='Magento\Cms\Model\Wysiwyg\Images\Storage'>
+		<arguments>
+			<argument name='image_allowed' xsi:type='array'>
+				<item name='pdf' xsi:type='string'>image/pdf</item>
+			</argument>
+			<argument name='extensions' xsi:type='array'>
+				<item name='pdf' xsi:type='string'>image/pdf</item>
+			</argument>
+		</arguments>
+	</type>
+<!-- 2019-10-03
 "Transfer the `Magento\CatalogImportExport\Model\Import\Uploader::init()` method modification to a plugin":
 https://github.com/shiftsst/core/issues/16 -->
 	<type name='Magento\CatalogImportExport\Model\Import\Uploader'>

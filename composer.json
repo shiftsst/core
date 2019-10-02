@@ -1,6 +1,6 @@
 {
 	"name": "shiftsst/core"
-	,"version": "0.0.7"
+	,"version": "0.0.8"
 	,"description": "A custom module for shiftsst.com (Magento 2)"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/shiftsst/core"
